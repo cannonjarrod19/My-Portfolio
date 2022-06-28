@@ -11,7 +11,7 @@ navLinks.forEach(link => {
     })
 })
 
-let text = ["Sports Fan", "Father of two", "Coffee Drinker", "BBQ Lover"];
+let text = ["a Sports Fan", "a Father of Two", "a Coffee Drinker", "a BBQ Lover", "an Outdoor Adventurer"];
 let counter = 0;
 const changeText = document.getElementById("change-text");
 let update = setInterval(change, 2500);
