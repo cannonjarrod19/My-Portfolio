@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jarrod's Portfolio Website</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f6ea0bd6e8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>   
+            <div class="logo">
+                <p>Cannon</p>
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">My Skills</a></li>
+                    <li class="nav-item"><a href="#work" class="nav-link">My Work</a></li>
+                </ul>
+            </nav>
+        </header> 
+
+        <section class="intro" id="home">
+            
+            <div class="intro-layout">
+                <h1 class="intro-title">Hi, I'm <strong>Jarrod!</strong>
+                <br/>
+                I'm a <strong>Data Analyst
+                </strong><br/>
+                and <span id="change-text"></span>
+                </h1>
+                <div class="tree2"></div>
+            </div>
+        </section>
+
+        <section class="about-me" id="about">
+            <div class="about-me-div">
+                <div class="about-me-bio">
+                    <h2 class="about-me-title">Who I Am</h2>
+                    <img src="images/Portfolio Pic.png" alt="picture of jarrod" class="about-me-img">
+                    <p class="about-me-subtitle">A Self-Taught Data Analyst</p>
+                </div>
+                
+                
+                <div class="about-me-body">
+                    <p>I have pivoted from a career in healthcare to pursue something that will better challenge me mentally and allow my creativity and imagination to flow.</p>
+                    <p>As a self-taught data analyst, I have drawn on my ambition and adaptability to learn the basic foundation of skills such as Excel, SQL, and Tableau.</p>
+                    <p>I am currently learning python and finding new ways to integrate pandas and matplotlib into data analytics. </p>
+                </div>
+            </div>
+            
+        </section>
+
+        
+
+        <section class="my-services" id="services">
+            <h2 class="my-services-title">My Toolbox</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>My list of skills and technologies I have worked with and am working on:</h3>
+                    
+                    <div class="icon-container icon-container1">
+                        <div>
+                            <i class="fa-solid fa-file-excel icons"></i>
+                            <label class="labels">Excel</label>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-database icons"></i>
+                            <label class="labels">SQL</label> 
+                        </div>  
+                    </div>
+
+                    <div class="icon-container">
+                        <div>
+                            <i class="fa-solid fa-laptop-code icons"></i>
+                            <label class="labels">Tableau</label>
+                        </div>
+                            
+                        <div>
+                            <i class="fa-brands fa-html5 icons"></i>
+                            <label class="labels">HTML</label>
+                        </div>
+                    </div>
+
+                    <div class="icon-container">
+                        <div>
+                            <i class="fa-brands fa-css3-alt icons"></i>
+                            <label class="labels">CSS</label>
+                        </div>
+                        
+                        <div class="last-icon">
+                            <i class="fa-brands fa-js-square icons"></i>
+                            <label class="labels">Javascript</label>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            <p class="working-on">Currently working on python and understanding how to use its libraries such as pandas, matplotlib, numpy, seaborn</p>
+        </section>
+
+        <section class="my-work" id="work">
+            <h2 class="my-work-title">Things that I've Built</h2>
+            <p class="my-work-subtitle">A selection of my range of work</p>
+
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <div class="portfolio-items">
+                        <img src="./images/MLB Pitching Stats Screenshot.png" alt="Tableau screenshot" class="portfolio-img">
+                    </div>
+
+                    <div class="portfolio-items">
+                        <h3 class="portfolio-title">Tableau MLB Pitching Stats</h3>
+                        <div class="skills-used">
+                            <i class="fa-solid fa-file-excel skills"></i>
+                            <i class="fa-solid fa-laptop-code skills"></i>
+                        </div>
+                        <p class="portfolio-info">This was a project I completed as a capstone to finishing a tableau certification course. I found a database that collects MLB pitching stats and pulled out specific categories that help answer a business question. I imported this data into excel to clean and better understand the data as a whole. Once cleaned, I created different charts and imported those charts to create dashboards that help answer the stated question and tell a story.</p>
+                        <div class="github-links">
+                            <a href="https://public.tableau.com/app/profile/jarrod4805/viz/MLBPitchingStats2002-2022/MLBPitchingStats2002-2022"><button class="btn-repo-links">View Demo</button></a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-items">
+                        <img src="./images/SQL screenshot.png" alt="SQL work history" class="portfolio-img">
+                    </div>
+
+                    <div class="portfolio-items">
+                        <h3 class="portfolio-title">SQL Exploration</h3>
+                        <div class="skills-used">
+                            <i class="fa-solid fa-database skills"></i>
+                        </div>
+                        <p class="portfolio-info">I stumbled upon an Olympics data set and wanted to test my SQL skills by coming up with different queries that answer specific questions. This allowed me to use different SQL queries to expand my understanding of the dataset more clearly.</p>
+                        <div class="github-links">
+                            <a href="https://github.com/cannonjarrod19/SQL-Olympics/blob/main/Olympics.sql"><button class="btn-repo-links">View <i class="fa-brands fa-github"></i> Repo</button></a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                
+                <div class="github-links">
+                    <p class="project-text">I am currently working on more projects and will update this list as they are completed.</p>
+                    <p class="project-text">Below is a link to my github repository covering all the projects I have completed from website design to data analysis.</p>
+                    <a href="https://github.com/cannonjarrod19?tab=repositories"><button class="view-more">View More Projects</button></a>
+                </div>
+                
+            </div>
+        </section>
+
+        
+
+        <footer class="footer">
+            <a href="mailto:cannonjarrod1@gmail.com" class="email">cannonjarrod1@gmail.com</a>
+            <ul class="footer-icons">
+                <li class="footer-item">
+                    <a href="https://github.com/cannonjarrod19?tab=repositories" class="footer-link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <p class="final-footer">Designed and coded by Jarrod Cannon</p>
+
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,857 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&display=swap');
+
+:root {
+    --olive-color: #2E4007;
+    --forest-color: #66734A;
+    --white-color: #fff;
+    --lightgreen-color: #D9DDC1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: var(--lightgreen-color);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.logo {
+    font-size: 2rem;
+    margin-left: 1em;
+    font-family: 'Luckiest Guy', cursive;
+    color: var(--lightgreen-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4em;
+    background-color: var(--olive-color);
+    position: relative;
+}
+
+header::after {
+    content: '';
+    background: url(./images/tree1.jpeg);
+    background-color: var(--lightgreen-color);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    width:125px;
+    height: 100px;
+    position: absolute;
+    top: 125px;
+    left:0;
+    z-index: 1;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-link {
+    color:#fff;
+    text-decoration: none;
+    margin-right: 1.0em;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: var(--lightgreen-color);
+}    
+
+/* first section */
+
+section {
+    padding: 3em;
+    
+}
+
+.tree2 {
+    background: url(./images/tree4.jpeg);
+    background-color: var(--lightgreen-color);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom:0px;
+    right:0px;
+    z-index: -100;
+}
+
+.intro {
+    color: var(--olive-color);
+    background-color: var(--lightgreen-color);
+    transform: skewY(-10deg);
+    transform-origin: right;
+    height: 65vh;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+    margin-top: 0.4em;
+    transform: skewY(10deg);
+
+}
+
+#change-text {
+    font-weight: bold;
+}
+
+strong {
+    font-weight: 900;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+/* about me section */
+
+.about-me {
+    background-color: var(--forest-color);
+    color: #fff;
+}
+
+.about-me-div {
+    margin-bottom: 6em;
+}
+
+.about-me-title {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.about-me-subtitle {
+    background: var(--white-color);
+    color: var(--olive-color);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.about-me p {
+    margin: 2rem 0;
+    font-size: 1.0rem;
+    letter-spacing: 0.7px;
+}
+
+.about-me-img {
+    margin: 0 auto;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,0.5);
+}
+
+.about-me-body {
+    padding-top: 3em;
+    
+}
+
+/* my services section */
+.my-services {
+    background-color: #fff ;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    transform: skewY(10deg);
+    transform-origin: right;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.my-services-title, .services, .btn {
+    transform: skewY(-10deg);
+    transform-origin: right;
+}
+
+.my-services-title {
+    color:var(--olive-color);
+    text-align: center;
+    padding: 0 1em;
+    margin: 1em auto 0;
+    position: relative;
+    
+}
+
+.my-services-title::after {
+    content:'';
+    width: 3em;
+    height: 1px;
+    background: var(--olive-color);
+    margin: 0.5em auto;
+    display: block;
+    opacity:0.6;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 1em;
+}
+
+.service {
+    text-align: center;
+    margin: 0.75em 0;
+    color: var(--forest-color);
+}
+
+.service h3 {
+    font-size: 1.25rem;
+    margin: 0.5em;
+    color: var(--olive-color);
+}
+
+.working-on {
+    transform: skewY(-10deg);
+    text-align: center;
+    color: var(--olive-color);
+    font-style: italic;
+    margin: 4em 0 8em;
+}
+
+.my-services-title, .services, .btn {
+    max-width: 500px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    margin: 2em auto;
+}
+
+.icon-container1 {
+    max-width: 283px;
+    margin-top: 4em;
+}
+
+.labels {
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.icons {
+    font-size: 5rem;
+    color: var(--olive-color);
+}
+
+.last-icon {
+    margin-right: -1em;
+}
+
+
+
+/* my work section */
+
+.my-work {
+    background-color: var(--olive-color);
+    margin-top: -6em;
+    transform: skewY(-10deg);
+    transform-origin: left;
+}
+
+.my-work-title, .my-work-subtitle, .portfolio {
+    transform: skewY(10deg);
+}
+
+.my-work-title {
+    text-align: center;
+    color: white;
+    
+}
+
+.my-work-subtitle {
+    color:var(--lightgreen-color);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.portfolio {
+    margin-bottom: 4em;
+}
+
+.portfolio-title {
+    font-size: 1.75rem;
+    color: var(--lightgreen-color);
+    text-align:center;
+}
+
+.portfolio-items {
+    margin-bottom: 1em;
+    
+}
+
+.skills {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 0.5em;
+}
+
+.skills-used {
+    text-align: center;
+}
+
+.github-links {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.btn-repo-links {
+    background: linear-gradient(to right, #fff, var(--forest-color));
+    color: var(--olive-color);
+    margin: 0 0.5em 2em 0.5em;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-repo-links:hover, .btn-repo-links:focus {
+    transform: scale(1.15);
+}
+
+.portfolio-img {
+    margin: 0.25em;
+}
+
+.portfolio-info {
+    color: #fff;
+    margin-bottom: 3em;
+    letter-spacing: 1px;
+}
+
+.view-more {
+    background: #fff;
+    color: var(--olive-color);
+    margin: 3em auto 0;
+    padding: 1em 3em;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.view-more:hover {
+    transform: scale(1.15);
+}
+
+.project-text {
+    color: white;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+/* footer */
+
+footer {
+    background: var(--lightgreen-color);
+    display: flex;
+    flex-direction: column;
+    margin-top: -3em; 
+    z-index: 100;
+    transform: skewY(0deg);
+}
+
+
+
+.email {
+    color:var(--olive-color);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin: 1em;
+}
+
+.email:hover {
+    text-decoration: underline;
+    opacity: 0.6;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+.footer-link {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--olive-color);
+}
+
+.footer-link:hover {
+    opacity: 0.6;
+}
+
+.final-footer {
+    text-align: center;
+}
+
+@media (max-width: 674px) {
+
+    .nav {
+        position: fixed;
+        background: var(--olive-color);
+        color: #fff;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        transform: translateX(100%);
+        transition: transform 250ms cubic-bezier(0.5, 0, .5, 1);
+    }
+    
+    .nav-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    .nav-link {
+        text-decoration: none;
+        padding: 10em;
+        color: #fff;
+        font-size: 2.5em;
+        font-weight:900;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-link:hover {
+        color:var(--lightgreen-color);
+    }
+    
+    .nav-toggle {
+        display:flex;
+        background: transparent;
+        padding: 1em;
+        position: absolute;
+        top: 2.5em;
+        right: 2em;
+        cursor: pointer;
+        border: 0;
+        z-index: 1000;
+    
+    }
+    
+    .nav-open .nav {
+        transform: translateX(0);
+         
+    }
+    
+    .nav-open .nav-toggle {
+        position: fixed;
+    }
+    
+    .nav-open .hamburger {
+        transform: rotate(225deg);
+    }
+    
+    .nav-open .hamburger::before {
+        transform: rotate(90deg) translateX(-13px);
+    }
+    
+    .nav-open .hamburger::after {
+        opacity:0;
+    }
+    
+    .hamburger {
+        display: block;
+        position: relative;
+    }
+    
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        width: 3em;
+        height: 5px;
+        margin: 0.6em 0;
+        background: var(--lightgreen-color);
+        border-radius: 1em;
+        transition: transform 350ms ease-in-out;
+    }
+    
+    .hamburger::before,
+    .hamburger::after {
+        content:'';
+        position:absolute;
+        left: 0;
+        right: 0;
+    }
+    
+    .hamburger::before {
+        top: 5px;
+    }
+    
+    .hamburger::after {
+        bottom: 5px;
+    }
+    
+    .about-me-body {
+        padding-top: 0;
+        text-align: center;
+    }
+    
+}
+
+@media (min-width: 675px) {
+    header::after {
+        width: 150px;
+        height: 130px;
+    }
+
+    .intro {
+        display: flex;
+        margin: 0 auto;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .intro-title {
+        margin-top: 0.2em;
+        font-size: 3rem;
+    }
+
+    .intro-layout {
+        margin-left:2em;
+    }
+
+    
+    
+    .about-me {
+        display: flex;
+        margin: 0 auto;
+       
+    }
+
+    .about-me-div {
+        margin: 0 auto 6em;
+    }
+
+    .about-me-title {
+        font-size:3.25rem;
+
+    }
+
+    .about-me-subtitle {
+        width: 100%;
+    }
+
+    .about-me-img {
+       width: 200px;
+       height: 370px;
+       object-fit: cover;
+       justify-content: flex-start; 
+       margin-top: 3em;
+    }
+
+    .about-me-body {
+        max-width: 500px;
+        padding-top: 0em;
+    }
+
+}
+
+@media (min-width: 800px) {
+    
+
+    .nav-link {
+        margin-right: 1.5em;
+    }
+    
+    .intro-title {
+        margin-top: -0.1em;
+        font-size: 3.4em;
+    }
+
+    .about-me-div {
+        margin: 1em auto 8em;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .about-me-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: 350px;
+        margin-left: 1em;
+        padding-bottom: 4em;
+    }
+
+    .about-me-bio {
+        margin-right: 2em;
+        margin-left: 2em;
+    }
+
+    .my-services-title {
+        font-size: 3.5rem;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: 1000px;
+        
+    }
+
+    .service {
+        margin: 0.75em;
+    }
+
+    .service:first-child {
+        margin-left:0;
+    }
+
+    .service:last-child {
+        margin-right: 0;
+    }
+
+    .service > h3 {
+        font-size: 1.6em;
+    }
+
+    .service > p {
+        font-size: 1.1em;
+    }
+
+    .portfolio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    }
+
+    .portfolio-item {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        
+    }
+
+    .portfolio-items {
+        width: 45%;
+    }
+
+    .portfolio-info {
+        max-width: 300px;
+        margin: 1.5em auto;
+    }
+
+    .portfolio-img {
+        width: 100%;
+
+    }
+}
+
+@media (min-width: 900px) {
+    
+
+    .tree2 {
+        height: 60%;
+    }
+
+    .nav-link {
+        margin-right: 1.8em;
+    }
+
+    .intro-title {
+        font-size: 3.8rem;
+        margin-top: -.2em;
+    }
+
+    .about-me-body {
+        padding-bottom: 0;
+        padding-top: 7em;
+        max-width: 375px;
+    }
+
+    .about-me-body p {
+        font-size: 1.3rem;
+    }
+
+    .about-me-title{
+        font-size: 3.2rem;
+    }
+
+    .about-me-subtitle {
+        font-size: 3rem;
+    }
+
+    .about-me-bio {
+        margin: 3em 0 3em 2em;
+    }
+}
+
+@media (min-width: 1000px) {
+    
+    header::after {
+        width: 175px;
+        height: 140px;
+    }
+    
+
+    .nav-link {
+        margin-right: 2em;
+    }
+
+    .intro-title {
+        margin-top: -0.4em;
+        font-size: 4em;
+    }
+
+    .intro {
+        padding-left: 5em;
+    }
+
+    .about-me-div {
+        margin: 3em auto 10em;
+    }
+
+    .about-me-body {
+        max-width: 400px;
+        padding-bottom: 3em;
+        padding-top: 8em;
+    }
+
+    .about-me-bio {
+        margin-left: 4em;
+    }
+
+    .portfolio-info {
+        max-width: 375px;
+    }
+
+    @media (min-width: 1100px) {
+        .tree2 {
+            height: 70%;
+        }
+
+        .intro-title {
+            margin-top: -0.5em;
+        }
+
+        .nav-link {
+            margin-right: 2.2em;
+            font-size: 1.5rem;
+        }
+
+        .about-me-body {
+            max-width: 450px;
+        }
+
+        .about-me-bio {
+            margin-left: 5.5em;
+        }
+    }
+
+    @media (min-width: 1250px) {
+        header::after {
+            width: 200px;
+            height: 150px
+        }
+
+        .tree2 {
+            height: 75%;
+        }
+
+        .nav-link {
+            margin-right: 2.5em;
+        }
+
+        .intro-title {
+            margin-top: -0.6em;
+        }
+
+        .about-me-body {
+            max-width: 500px;
+            padding-bottom: 5em;
+        }
+
+        .about-me-bio {
+            margin-left: 6.5em;
+        }
+
+        .portfolio-item {
+            max-width: 1250px;
+            margin: 1em auto;
+        }
+    }
+
+    @media (min-width: 1350px) {
+        
+        .nav-link {
+            margin-right: 2.75em;
+        }
+
+        .intro-title {
+            margin-top: -0.8em;
+            margin-left: 1em;
+        }
+
+        .about-me-bio {
+            margin-left: 10em;
+        }
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
